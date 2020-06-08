@@ -1,0 +1,32 @@
+.wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr 40px;
+  grid-template-areas:
+    "navbar "
+    "main"
+    "footer";
+  grid-gap: 5px;
+}
+.navbar {
+  grid-area: navbar;
+  background: rgb(229, 255, 0);
+  border-radius: 10px;
+}
+.main {
+  grid-area: main;
+  background: rgba(150, 236, 129, 0.589);
+  border-radius: 15px;
+}
+.footer {
+  grid-area: footer;
+  background: rgb(20, 185, 20);
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.main {
+  display: grid;
+}

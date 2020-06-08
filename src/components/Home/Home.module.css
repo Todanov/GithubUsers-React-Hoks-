@@ -1,0 +1,33 @@
+.Home {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas:
+    "Home_1 "
+    "Home_2";
+  margin: 10px;
+}
+
+.Home_1 {
+  grid-area: Home_1;
+}
+.Home_2 {
+  grid-area: Home_2;
+  flex-wrap: wrap;
+}
+
+.Home_1 {
+  justify-self: center;
+  align-self: center;
+}
+.Home_2 {
+  display: flex;
+}
+.cards {
+  height: 200px;
+  width: 200px;
+  margin: 15px;
+  border-radius: 15px;
+  align-self: center;
+  justify-content: center;
+}
